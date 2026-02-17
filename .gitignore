@@ -1,0 +1,30 @@
+# -----------------------------
+# ASP.NET Core
+# -----------------------------
+bin/
+obj/
+*.user
+*.suo
+*.log
+appsettings.json
+appsettings.Development.json
+
+# -----------------------------
+# Angular
+# -----------------------------
+node_modules/
+frontend/weather-app/node_modules/
+dist/
+.angular/
+coverage/
+
+# -----------------------------
+# VS Code
+# -----------------------------
+.vscode/
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db

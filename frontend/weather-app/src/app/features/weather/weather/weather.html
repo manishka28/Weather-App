@@ -1,0 +1,64 @@
+<div class="min-h-screen bg-blue-600 p-6 flex flex-col items-center justify-center gap-6">
+
+  <!-- Weather Card -->
+  <div class="bg-white shadow-2xl rounded-2xl w-full max-w-md p-6">
+
+    <h2 class="text-2xl font-bold text-center text-gray-700 mb-6">
+      🌤 Weather Search
+    </h2>
+
+    <div class="flex gap-2">
+      <input 
+        [(ngModel)]="city" 
+        placeholder="Enter City"
+        class="flex-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+
+      <button 
+        (click)="search()"
+        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-200"
+      >
+        Search
+      </button>
+    </div>
+    
+    <div *ngIf="weather" class="mt-6 bg-blue-50 p-4 rounded-xl shadow-inner">
+      <h3 class="text-xl font-semibold text-gray-700">
+        {{weather.name}}, {{weather.sys.country}}
+      </h3>
+
+      <p class="text-lg text-gray-600 mt-2">
+        Temperature: <span class="font-bold text-blue-600">{{weather.main.temp}} °C</span>
+      </p>
+
+      <p class="text-gray-600">
+        Feels like: {{weather.main.feels_like}} °C
+      </p>
+
+      <p class="text-gray-600">
+        Min: {{weather.main.temp_min}} °C | Max: {{weather.main.temp_max}} °C
+      </p>
+
+      <p class="text-gray-600">
+        Weather: {{weather.weather[0]?.main}} - {{weather.weather[0]?.description}}
+      </p>
+
+      <p class="text-gray-600">
+        Wind: {{weather.wind.speed}} m/s, {{weather.wind.deg}}°
+      </p>
+
+      <p class="text-gray-600">
+        Visibility: {{weather.visibility}} m
+      </p>
+
+      <p class="text-gray-600">
+        Clouds: {{weather.clouds.all}} %
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Map -->
+  <div *ngIf="weather" id="map" class="w-full max-w-4xl h-80 rounded-xl shadow-lg mt-4"></div>
+  
+</div>
