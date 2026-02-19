@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/YOUR-USERNAME/Weather-App.git'
+                git 'https://github.com/manishka28/Weather-App.git'
             }
         }
 
