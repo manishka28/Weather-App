@@ -7,11 +7,7 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/manishka28/Weather-App.git'
-            }
-        }
+        
 
         stage('Restore') {
             steps {
