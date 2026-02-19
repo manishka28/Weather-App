@@ -1,33 +1,29 @@
 pipeline {
     agent any
 
-    environment {
-        SONAR_TOKEN = credentials('sonar-token')
-    }
-
     stages {
 
         stage('Restore') {
             steps {
-                sh 'dotnet restore'
+                sh 'dotnet restore backend/WeatherApi/WeatherApi.csproj'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'dotnet build --no-restore'
+                sh 'dotnet build backend/WeatherApi/WeatherApi.csproj --no-restore'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'dotnet test --no-build'
+                sh 'dotnet test backend/WeatherApi/WeatherApi.csproj --no-build'
             }
         }
 
         stage('Publish') {
             steps {
-                sh 'dotnet publish -c Release -o publish'
+                sh 'dotnet publish backend/WeatherApi/WeatherApi.csproj -c Release -o publish'
             }
         }
     }
