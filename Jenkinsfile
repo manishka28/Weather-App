@@ -1,28 +1,57 @@
 pipeline {
     agent any
 
+    environment {
+        SONAR_TOKEN = credentials('sonar-token')
+    }
+
     stages {
 
-        stage('Stop Old Containers') {
+        stage('Checkout') {
             steps {
-                sh 'docker stop weather-backend || true'
-                sh 'docker stop weather-frontend || true'
-                sh 'docker rm weather-backend || true'
-                sh 'docker rm weather-frontend || true'
+                git 'https://github.com/YOUR-USERNAME/Weather-App.git'
             }
         }
 
-        stage('Build Images') {
+        stage('Restore') {
             steps {
-                sh 'docker build -t weather-backend ./backend'
-                sh 'docker build -t weather-frontend ./frontend'
+                bat 'dotnet restore'
             }
         }
 
-        stage('Run Containers') {
+        stage('Build') {
             steps {
-                sh 'docker run -d -p 5000:80 --name weather-backend weather-backend'
-                sh 'docker run -d -p 4200:80 --name weather-frontend weather-frontend'
+                bat 'dotnet build --no-restore'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'dotnet test --no-build'
+            }
+        }
+
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('SonarQube') {
+                    bat """
+                    dotnet sonarscanner begin ^
+                    /k:"WeatherApp" ^
+                    /d:sonar.host.url="http://localhost:9000" ^
+                    /d:sonar.login="%SONAR_TOKEN%"
+
+                    dotnet build
+
+                    dotnet sonarscanner end ^
+                    /d:sonar.login="%SONAR_TOKEN%"
+                    """
+                }
+            }
+        }
+
+        stage('Publish') {
+            steps {
+                bat 'dotnet publish -c Release -o publish'
             }
         }
     }

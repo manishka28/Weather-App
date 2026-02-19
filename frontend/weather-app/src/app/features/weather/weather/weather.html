@@ -22,43 +22,57 @@
       </button>
     </div>
     
-    <div *ngIf="weather" class="mt-6 bg-blue-50 p-4 rounded-xl shadow-inner">
+    <!-- Weather Result -->
+    <div *ngIf="weather() as w" class="mt-6 bg-blue-50 p-4 rounded-xl shadow-inner">
+      
       <h3 class="text-xl font-semibold text-gray-700">
-        {{weather.name}}, {{weather.sys.country}}
+        {{ w.name }}, {{ w.sys?.country }}
       </h3>
 
       <p class="text-lg text-gray-600 mt-2">
-        Temperature: <span class="font-bold text-blue-600">{{weather.main.temp}} °C</span>
+        Temperature: 
+        <span class="font-bold text-blue-600">
+          {{ w.main?.temp }} °C
+        </span>
       </p>
 
       <p class="text-gray-600">
-        Feels like: {{weather.main.feels_like}} °C
+        Feels like: {{ w.main?.feels_like }} °C
       </p>
 
       <p class="text-gray-600">
-        Min: {{weather.main.temp_min}} °C | Max: {{weather.main.temp_max}} °C
+        Min: {{ w.main?.temp_min }} °C |
+        Max: {{ w.main?.temp_max }} °C
       </p>
 
       <p class="text-gray-600">
-        Weather: {{weather.weather[0]?.main}} - {{weather.weather[0]?.description}}
+        Weather: 
+        {{ w.weather?.[0]?.main }} -
+        {{ w.weather?.[0]?.description }}
       </p>
 
       <p class="text-gray-600">
-        Wind: {{weather.wind.speed}} m/s, {{weather.wind.deg}}°
+        Wind: {{ w.wind?.speed }} m/s,
+        {{ w.wind?.deg }}°
       </p>
 
       <p class="text-gray-600">
-        Visibility: {{weather.visibility}} m
+        Visibility: {{ w.visibility }} m
       </p>
 
       <p class="text-gray-600">
-        Clouds: {{weather.clouds.all}} %
+        Clouds: {{ w.clouds?.all }} %
       </p>
+
     </div>
 
   </div>
 
   <!-- Map -->
-  <div *ngIf="weather" id="map" class="w-full max-w-4xl h-80 rounded-xl shadow-lg mt-4"></div>
+  <div 
+    *ngIf="weather()?.coord" 
+    id="map" 
+    class="w-full max-w-4xl h-80 rounded-xl shadow-lg mt-4">
+  </div>
   
 </div>
