@@ -7,39 +7,37 @@ pipeline {
 
     stages {
 
-        
-
         stage('Restore') {
             steps {
-                bat 'dotnet restore'
+                sh 'dotnet restore'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'dotnet build --no-restore'
+                sh 'dotnet build --no-restore'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'dotnet test --no-build'
+                sh 'dotnet test --no-build'
             }
         }
 
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    bat """
-                    dotnet sonarscanner begin ^
-                    /k:"WeatherApp" ^
-                    /d:sonar.host.url="http://localhost:9000" ^
-                    /d:sonar.login="%SONAR_TOKEN%"
+                    sh """
+                    dotnet sonarscanner begin \
+                    /k:"WeatherApp" \
+                    /d:sonar.host.url="http://localhost:9000" \
+                    /d:sonar.login="${SONAR_TOKEN}"
 
                     dotnet build
 
-                    dotnet sonarscanner end ^
-                    /d:sonar.login="%SONAR_TOKEN%"
+                    dotnet sonarscanner end \
+                    /d:sonar.login="${SONAR_TOKEN}"
                     """
                 }
             }
@@ -47,7 +45,7 @@ pipeline {
 
         stage('Publish') {
             steps {
-                bat 'dotnet publish -c Release -o publish'
+                sh 'dotnet publish -c Release -o publish'
             }
         }
     }
