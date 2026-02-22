@@ -1,29 +1,62 @@
 pipeline {
     agent any
 
+    environment {
+        SONAR_HOST = "http://host.docker.internal:9000"
+        SONAR_TOKEN = credentials('sonar-token')
+    }
+
     stages {
 
-        stage('Restore') {
+        stage('Checkout') {
             steps {
-                sh 'dotnet restore backend/WeatherApi/WeatherApi.csproj'
+                git 'https://github.com/manishka28/Weather-App.git'
             }
         }
 
-        stage('Build') {
-            steps {
-                sh 'dotnet build backend/WeatherApi/WeatherApi.csproj --no-restore'
-            }
+        stage('Backend Build + Sonar') {
+    agent {
+        docker {
+            image 'mcr.microsoft.com/dotnet/sdk:10.0'
         }
+    }
+    steps {
+        sh """
+        dotnet --version
 
-        stage('Test') {
-            steps {
-                sh 'dotnet test backend/WeatherApi/WeatherApi.csproj --no-build'
+        dotnet tool install --global dotnet-sonarscanner
+        export PATH="\$PATH:/root/.dotnet/tools"
+
+        dotnet sonarscanner begin \
+          /k:"WeatherApp-Backend" \
+          /d:sonar.host.url="${SONAR_HOST}" \
+          /d:sonar.login="${SONAR_TOKEN}"
+
+        dotnet build server/src/WeatherApp.Api
+
+        dotnet sonarscanner end \
+          /d:sonar.login="${SONAR_TOKEN}"
+        """
+    }
+}
+
+        stage('Frontend Build + Sonar') {
+            agent {
+                docker {
+                    image 'node:20'
+                }
             }
-        }
-
-        stage('Publish') {
             steps {
-                sh 'dotnet publish backend/WeatherApi/WeatherApi.csproj -c Release -o publish'
+                sh """
+                cd frontend/weather-app
+                npm install
+                npm run build
+
+                npx sonar-scanner \
+                  -Dsonar.projectKey=WeatherApp-Frontend \
+                  -Dsonar.host.url=${SONAR_HOST} \
+                  -Dsonar.login=${SONAR_TOKEN}
+                """
             }
         }
     }
