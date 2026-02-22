@@ -8,11 +8,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/manishka28/Weather-App.git'
-            }
-        }
+        // stage('Checkout') {
+        //     steps {
+        //         git 'https://github.com/manishka28/Weather-App.git'
+        //     }
+        // }
 
         stage('Backend Build + Sonar') {
     agent {
