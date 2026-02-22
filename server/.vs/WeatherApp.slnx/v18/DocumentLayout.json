@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|solutionrelative:src\\weatherapp.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{361E6CA9-0A0A-E789-5BB7-CEFE6C028573}|src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{361E6CA9-0A0A-E789-5BB7-CEFE6C028573}|src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj|solutionrelative:src\\weatherapp.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0B31718-B253-4AD9-9557-440AB683D76E}|src\\WeatherApp.Domain\\WeatherApp.Domain.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0B31718-B253-4AD9-9557-440AB683D76E}|src\\WeatherApp.Domain\\WeatherApp.Domain.csproj|solutionrelative:src\\weatherapp.domain\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0B31718-B253-4AD9-9557-440AB683D76E}|src\\WeatherApp.Domain\\WeatherApp.Domain.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.domain\\interfaces\\iweatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0B31718-B253-4AD9-9557-440AB683D76E}|src\\WeatherApp.Domain\\WeatherApp.Domain.csproj|solutionrelative:src\\weatherapp.domain\\interfaces\\iweatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{361E6CA9-0A0A-E789-5BB7-CEFE6C028573}|src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.infrastructure\\externalservices\\openweatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{361E6CA9-0A0A-E789-5BB7-CEFE6C028573}|src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj|solutionrelative:src\\weatherapp.infrastructure\\externalservices\\openweatherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.application\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|solutionrelative:src\\weatherapp.application\\interfaces\\iweatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|solutionrelative:src\\weatherapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|solutionrelative:src\\weatherapp.application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.application\\interfaces\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|solutionrelative:src\\weatherapp.application\\interfaces\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.api\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|solutionrelative:src\\weatherapp.api\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{361E6CA9-0A0A-E789-5BB7-CEFE6C028573}|src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.infrastructure\\weatherapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{361E6CA9-0A0A-E789-5BB7-CEFE6C028573}|src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj|solutionrelative:src\\weatherapp.infrastructure\\weatherapp.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.application\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D6E587-C6B9-0684-5BA6-2CC37925BB54}|src\\WeatherApp.Application\\WeatherApp.Application.csproj|solutionrelative:src\\weatherapp.application\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|solutionrelative:src\\weatherapp.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|c:\\users\\manishkagupta\\desktop\\weatherapp\\server\\src\\weatherapp.api\\weatherapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{18906425-B440-A2DC-BEF7-15F693D16788}|src\\WeatherApp.API\\WeatherApp.API.csproj|solutionrelative:src\\weatherapp.api\\weatherapp.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Infrastructure\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "src\\WeatherApp.Infrastructure\\Repository\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:47:58.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OpenWeatherRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Infrastructure\\ExternalServices\\OpenWeatherRepository.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Infrastructure\\ExternalServices\\OpenWeatherRepository.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Infrastructure\\ExternalServices\\OpenWeatherRepository.cs",
+              "RelativeToolTip": "src\\WeatherApp.Infrastructure\\ExternalServices\\OpenWeatherRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:29:12.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IWeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Interfaces\\IWeatherService.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Application\\Interfaces\\IWeatherService.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Interfaces\\IWeatherService.cs",
+              "RelativeToolTip": "src\\WeatherApp.Application\\Interfaces\\IWeatherService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:23:26.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.API\\Program.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\Program.cs",
+              "RelativeToolTip": "src\\WeatherApp.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T17:23:35.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IWeatherRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Domain\\Interfaces\\IWeatherRepository.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Domain\\Interfaces\\IWeatherRepository.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Domain\\Interfaces\\IWeatherRepository.cs",
+              "RelativeToolTip": "src\\WeatherApp.Domain\\Interfaces\\IWeatherRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:22:13.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Domain\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Domain\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "src\\WeatherApp.Domain\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:48:51.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "src\\WeatherApp.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwCIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:41:02.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Application\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "src\\WeatherApp.Application\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:45:39.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IJwtTokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Interfaces\\IJwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Application\\Interfaces\\IJwtTokenGenerator.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Interfaces\\IJwtTokenGenerator.cs",
+              "RelativeToolTip": "src\\WeatherApp.Application\\Interfaces\\IJwtTokenGenerator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:42:01.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WeatherController.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\Controllers\\WeatherController.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.API\\Controllers\\WeatherController.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\Controllers\\WeatherController.cs",
+              "RelativeToolTip": "src\\WeatherApp.API\\Controllers\\WeatherController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:34:31.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherApp.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj",
+              "RelativeToolTip": "src\\WeatherApp.Infrastructure\\WeatherApp.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-22T09:28:20.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Services\\WeatherService.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.Application\\Services\\WeatherService.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.Application\\Services\\WeatherService.cs",
+              "RelativeToolTip": "src\\WeatherApp.Application\\Services\\WeatherService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-22T09:25:10.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\WeatherApp.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\WeatherApp.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T17:26:44.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WeatherApp.API.csproj",
+              "DocumentMoniker": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\WeatherApp.API.csproj",
+              "RelativeDocumentMoniker": "src\\WeatherApp.API\\WeatherApp.API.csproj",
+              "ToolTip": "C:\\Users\\ManishkaGupta\\Desktop\\WeatherApp\\server\\src\\WeatherApp.API\\WeatherApp.API.csproj",
+              "RelativeToolTip": "src\\WeatherApp.API\\WeatherApp.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-21T17:26:07.867Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
